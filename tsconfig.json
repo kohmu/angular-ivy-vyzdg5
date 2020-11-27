@@ -1,3 +1,4 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -7,21 +8,30 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "module": "esnext",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "target": "es5",
+    "module": "es2020",
     "lib": [
       "es2018",
       "dom"
-    ]
-  },
-  "angularCompilerOptions": {
-    "enableIvy": true,
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    ],
+    "paths": {
+      "@udonarium/*": [
+        "src/app/class/*"
+      ],
+      "directive/*": [
+        "src/app/directive/*"
+      ],
+      "component/*": [
+        "src/app/component/*"
+      ],
+      "pipe/*": [
+        "src/app/pipe/*"
+      ],
+      "service/*": [
+        "src/app/service/*"
+      ]
+    },
   }
 }
